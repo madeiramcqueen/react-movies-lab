@@ -2,7 +2,6 @@ import './App.css';
 import { userState, useState } from 'react'
 import { Routes } from 'react-router-dom'
 import LoginPage from './pages/LoginPage/LoginPage';
-// import NavBar from './components/NavBar/NavBar';
 
 function App() {
   const [user, setUser] = useState(null)
