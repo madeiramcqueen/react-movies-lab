@@ -5,10 +5,22 @@ export default class LoginForm extends Component {
     //state for SignUpForm as a class field
     state = {
         name: '',
-        email: '',
-        password: '',
-        confirm: '',
+        // email: '',
+        // password: '',
+        // confirm: '',
         error: '',
+    }
+
+    handleChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value,
+            error: '',
+        })
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        alert(JSON.stringify(this.state))
     }
 
     render() {
@@ -25,7 +37,7 @@ export default class LoginForm extends Component {
                             onChange={this.handleChange}
                             required
                         />
-                        <label>Email</label>
+                        {/* <label>Email</label>
                         <input
                             type="email"
                             name="email"
@@ -48,7 +60,7 @@ export default class LoginForm extends Component {
                             value={this.state.confirm}
                             onChange={this.handleChange}
                             required
-                        />
+                        /> */}
                         <button type="submit" disabled={disable}>Sign In</button>
                     </form>
                 </div>
