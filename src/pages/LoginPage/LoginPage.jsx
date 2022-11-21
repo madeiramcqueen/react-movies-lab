@@ -8,6 +8,7 @@ export default function LoginPage(props) {
     }
 
     const handleSubmit = (event) => {
+        event.preventDefault()
         props.setNewUser(newUser)
     }
 
