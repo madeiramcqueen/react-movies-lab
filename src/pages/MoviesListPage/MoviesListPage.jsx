@@ -1,3 +1,5 @@
+import { movies } from "../../data"
+
 export default function MoviesListPage() {
     return (
         <div>
