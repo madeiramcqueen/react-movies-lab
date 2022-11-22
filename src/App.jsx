@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React Movies Home Page</h1>
+      <h1>React Movies</h1>
       {user ?
         <>
           <NavBar />

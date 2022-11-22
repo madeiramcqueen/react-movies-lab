@@ -9,7 +9,8 @@ export default function MoviesListPage({ movies }) {
                 <MovieCard
                     key={movie.title}
                     title={movie.title}
-                    releaseDate={movie.releaseDate} />
+                    releaseDate={movie.releaseDate}
+                    posterPath={movie.posterPath} />
             ))}
 
         </div>

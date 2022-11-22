@@ -1,11 +1,12 @@
 
 
-export default function MovieCard({ title, releaseDate }) {
+export default function MovieCard({ title, releaseDate, posterPath }) {
     return (
         <div className="movie-card">
-            <h3>Movie Titles and Release Dates:</h3>
-            <p>Title: {title}</p>
-            <p>Release Date: {releaseDate}</p>
+
+            <p>Title: {title} </p>
+            <p>Release Date: {releaseDate} </p>
+            <p>Poster Path: <img src={posterPath} /> </p>
 
         </div>
 
