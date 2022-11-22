@@ -1,23 +1,23 @@
-import { useState } from 'react'
 
-export default function LoginPage(props) {
-    const [newUser, setNewUser] = useState('')
+import { useState } from "react"
+
+export default function LoginPage({ setUser }) {
+    const [username, setUsername] = useState('')
 
     const handleChange = (event) => {
-        setNewUser(event.target.value)
+        setUsername(event.target.value)
     }
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        props.setNewUser(newUser)
+        setUser(username)
     }
-
     return (
         <div className="Login-page">
             <h1>Login Page</h1>
             <form onSubmit={handleSubmit}>
                 <label>Your Username:</label>
-                <input type="text" onchange={handleChange} />
+                <input type="text" onChange={handleChange} />
                 <button type="submit">Login</button>
             </form>
         </div>
