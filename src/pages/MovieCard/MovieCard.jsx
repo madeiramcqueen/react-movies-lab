@@ -1,13 +1,12 @@
-
+import { Link } from "react-router-dom"
 
 export default function MovieCard({ title, releaseDate, posterPath }) {
     return (
         <div className="movie-card">
 
-            <p>Title: {title} </p>
+            <Link to={`/movies/${title}`}>Title: {title}</Link>
             <p>Release Date: {releaseDate} </p>
-            <p>Poster Path: <img src={posterPath} /> </p>
-
+            <img src={posterPath} />
         </div>
 
     )
