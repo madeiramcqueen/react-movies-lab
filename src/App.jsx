@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<MoviesListPage movies={movies} />} />
             <Route path="/actors" element={<ActorListPage />} />
-            <Route path="/movies/:movieName" element={<MovieDetailPage />}
+            <Route path="/movies/:movieName" element={<MovieDetailPage movies={movies} />}
             />
           </Routes>
           <p>Welcome {user}! You are signed in.</p> </> :

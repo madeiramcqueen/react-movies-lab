@@ -9,7 +9,15 @@ export default function MovieDetailPage({ movies }) {
     return (
         <div>
             <h1>Movie: {movie.title}</h1>
-            {movie.posterPath}
+            <h2>Release Date: {movie.releaseDate}</h2>
+            <h2>Cast Members:</h2>
+            <ul>
+                {movie.cast.map(actor => {
+                    return <li key={actor}>{actor}</li>
+                })
+                }
+            </ul>
+            <img src={movie.posterPath} />
         </div>
     )
 }
