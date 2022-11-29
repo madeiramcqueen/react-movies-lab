@@ -8,7 +8,7 @@ export default function MovieDetailPage({ movies }) {
 
     return (
         <div>
-            <h1>{movie.title}</h1>
+            <h1>Movie: {movie.title}</h1>
             {movie.posterPath}
         </div>
     )
