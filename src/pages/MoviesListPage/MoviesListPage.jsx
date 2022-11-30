@@ -1,6 +1,4 @@
 import MovieCard from "../MovieCard/MovieCard"
-import { Link } from "react-router-dom"
-
 
 export default function MoviesListPage({ movies }) {
     return (
