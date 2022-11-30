@@ -12,9 +12,11 @@ export default function ActorListPage({ movies }) {
     return (
         <div>
             <h1>Actor List Page</h1>
-            {actorsArray.map((actor) => (
+            {actorsArray.map((actor, index) => (
                 <ActorCard
-                    actor={actor} />
+                    key={actor}
+                    actor={actor}
+                    index={index} />
             ))}
         </div>
     )

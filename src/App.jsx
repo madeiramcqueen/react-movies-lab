@@ -24,7 +24,8 @@ function App() {
             <Route path="/movies/:movieName" element={<MovieDetailPage movies={movies} />}
             />
           </Routes>
-          <p>Welcome {user}! You are signed in.</p> </> :
+          <p>Welcome {user}! You are signed in.</p>
+        </> :
         <LoginPage setUser={setUser} />}
     </div>
   );
